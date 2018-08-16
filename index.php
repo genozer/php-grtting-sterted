@@ -11,8 +11,8 @@ $arrHeader = array();
 $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
  
-public function handle()
-    {
+
+    
         $TEACH_SIGN = '==';
         $text = $this->textMessage->getText();
         $text = trim(text);
@@ -133,7 +133,7 @@ public function handle()
             default:
                 $this->echoBack($replyToken, $text);
                 break;
-        }
+        
     }
 
     /**
